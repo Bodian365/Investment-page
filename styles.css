@@ -380,13 +380,14 @@ padding: 2.4rem 0 9.6rem 0;
     content: 'most popular';
     position: absolute;
     top: 6%;
-    left: 48%;
+    left: 52%;
     text-transform: uppercase;
     background-color: #66a79d;
     padding: 0.8rem 8rem;
     min-width: 10rem;
     transform: rotate(45deg);
     font-weight: 600;
+    font-size: 1.2rem;
 }
 
 .plan-header{
@@ -442,4 +443,84 @@ padding: 2.4rem 0 9.6rem 0;
 
 .center-position{
     justify-self: center
+}
+
+
+/*
+ ########################### 
+ **** SERVICES SECTION *****
+ ########################### 
+*/
+
+.testimonials-section{
+    padding: 2.4rem 0 9.6rem 0;
+}
+
+
+.testimonials-container{
+    padding: 4.8rem 6.4rem;
+    background-color: #e6f0ef;
+
+}
+
+.testimonials{
+    margin-top: 4.8rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 3.2rem;
+    column-gap: 4.8rem;
+}
+
+.testimonial{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 1.6rem 3.2rem;
+
+    background-color: #fff;
+    border-radius: 0.5rem;
+
+    transition: all 0.5s;
+}
+
+.testimonial:hover{
+    cursor: pointer;
+    /* transform: translateY(-1.2rem) rotate(180deg); */
+    transform: rotate(180deg);
+    box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.06);
+}
+
+.testimonial-image{
+    width: 15%;
+    border-radius: 50%;
+    margin-bottom: 1.2rem;
+}
+
+.testimonial-name{
+    font-size: 2.4rem;
+    font-weight: 600;
+    margin-bottom: 0.4rem;
+}
+
+.testimonial-position{
+    font-size: 1.4rem;
+    margin-bottom: 2.4rem;
+}
+
+.testimonial-text{
+    font-size: 1.6rem;
+    text-align: center;
+    margin-bottom: 3.2rem;
+    /* border-bottom: 0.1rem solid rgba(119, 119, 119, 0.377); */
+}
+
+.ph-quotes{
+    font-size: 3rem;
+    border: 0.1rem solid #66a79d;
+    color: #66a79d;
+    border-radius: 50%;
+    padding: 0.8rem;
+    transform: rotate(180deg);
+
 }
