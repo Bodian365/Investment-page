@@ -486,8 +486,9 @@ padding: 2.4rem 0 9.6rem 0;
 
 .testimonial:hover{
     cursor: pointer;
-    /* transform: translateY(-1.2rem) rotate(180deg); */
-    transform: rotate(180deg);
+    transform: translateY(-1.2rem) rotate(2deg);
+    /* transform: rotate(2deg); */
+    /* transform: rotate(180deg); */
     box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.06);
 }
 
