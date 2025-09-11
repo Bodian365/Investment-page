@@ -25,9 +25,13 @@
 
     <link rel="icon" href="img/web-icon.png" />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="viewports.css" />
 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script defer src="/js/script.js"></script>
+
     <title>Investment Assistant</title>
   </head>
   <body>
@@ -35,7 +39,7 @@
       <a href="#">
         <img src="./img/Logo-text.png" alt="Logo text" class="logo-text" />
       </a>
-      <nav>
+      <nav class="main-nav">
         <ul class="main-list">
           <li><a class="main-list-item" href="#about">About</a></li>
           <li><a class="main-list-item" href="#how">How it works</a></li>
@@ -46,6 +50,10 @@
           <li><a class="main-list-item cta-nav" href="#cta">Try Now!</a></li>
         </ul>
       </nav>
+      <button class="btn-mobile-nav">
+        <i class="ph ph-list ph-mobile-nav"></i>
+        <i class="ph ph-x ph-mobile-nav"></i>
+      </button>
     </header>
 
     <section class="hero-section">
@@ -56,10 +64,12 @@
             Work one-on-one with a professional investment assistant who will
             guide you, train you, and help you make smarter financial decisions.
           </p>
-          <a href="#cta" class="cta-btn margin-right-small"
-            >Get Started Today</a
-          >
-          <a href="#about" class="cta-btn btn-outline">More Info &rarr;</a>
+          <div class="cta-links-box">
+            <a href="#cta" class="cta-btn margin-right-small"
+              >Get Started Today</a
+            >
+            <a href="#about" class="cta-btn btn-outline">More Info &rarr;</a>
+          </div>
         </div>
         <div class="hero-image-box">
           <img class="hero-image" src="img/hero.png" alt="Hero image" />
@@ -181,9 +191,7 @@
                   <span class="price-dollar-mark">$</span> 199
                   <span class="plan-price-description">per month</span>
                 </p>
-                <p class="plan-description">
-                  Perfect for beginners who want to learn.
-                </p>
+                <p class="plan-description">Perfect for beginners.</p>
               </header>
               <ul class="plan-list">
                 <li class="plan-list-item">
@@ -232,7 +240,7 @@
 
             <div class="plan plan--3">
               <header class="plan-header">
-                <p class="plan-name">Personalized Mentorship</p>
+                <p class="plan-name">Personal Mentorship</p>
                 <p class="plan-price">
                   <span class="price-dollar-mark">$</span> 499
                   <span class="plan-price-description">per month</span>
@@ -433,8 +441,8 @@
                 <li><i class="ph social-links-icon ph-instagram-logo"></i></li>
               </ul>
               <p class="copyright">
-                Copyright &copy; 2025 by Finance Growth, Inc. All rights
-                reserved
+                Copyright &copy; <span class="copyright-year">2025</span> by
+                Finance Growth, Inc. All rights reserved
               </p>
             </div>
 
